@@ -54,7 +54,7 @@ app.post("/users", cpfAlreadyExists, (req, res) => {
 });
 
 app.get("/users", (req, res) => {
-  res.json({ USERS });
+  res.json(USERS);
 });
 
 app.patch("/users/:cpf", userExist, (req, res) => {
